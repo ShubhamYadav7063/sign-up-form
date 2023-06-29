@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1633386008252-f2d3ee603dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
+        alt=""
+        class="image"
+      />
+
+      <section class="form">
+        <section class="p">
+          <p>
+            This is not a real online service!!!. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Sequi quod quisquam unde neque
+            dolorem, ex exercitationem officiis repellendus nobis ducimus
+            repellat soluta nesciunt, est ipsam ipsa ab distinctio, magni
+            labore!
+          </p>
+        </section>
+        <form action="" id="form">
+          <fieldset id="part-1">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              required
+              placeholder="Last Name"
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Email"
+            />
+
+            <input
+              type="number"
+              pattern="^[7-9]\d{9}$"
+              id="phone-number"
+              placeholder="Phone Number"
+              maxlength="10"
+            />
+            <div id="phone-error"></div>
+          </fieldset>
+
+          <fieldset>
+            <input
+              type="password"
+              required
+              min="5"
+              max="10"
+              id="password"
+              placeholder="Password"
+            />
+
+            <input
+              type="password"
+              required
+              min="5"
+              max="10"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+            <div id="password-error" class="error"></div>
+          </fieldset>
+        </form>
+
+        <section class="submit">
+          <button type="submit" form="form" id="submit-btn">
+            Create Account
+          </button>
+          <p>Already have an Account? <a href="#">Log In</a></p>
+        </section>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
